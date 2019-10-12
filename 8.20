@@ -1,0 +1,7 @@
+import re
+# Input.
+text = "All work and no play makes Johhny a bored boy."
+#find all the words starting with 'a'
+list = re.findall("[a]\w+", text)
+# Print result.
+print(list)
