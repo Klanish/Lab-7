@@ -1,0 +1,17 @@
+    def wordPop(text, n):
+        nwords = []
+        words = text.split()
+        for word in words:
+            if (len(word) >= n):
+                 nwords.append(word)
+        return sorted(nwords,
+                      key=len,
+                      reverse= True ## if longest first
+                      )
+    text = 'This is a test off word length almost working'
+    print wordPop(text.lower(), 4)
+    print 'Shortly:',sorted((word.lower()
+                             for word in text.split()
+                             if len(word)>=4),
+                             key=len,
+                            reverse=True)
