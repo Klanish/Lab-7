@@ -1,0 +1,5 @@
+#match all words ending in ing
+import re
+expression = input("please enter an expression: ")
+s="sharing all the information you are hearing"
+print(re.findall(r'\b(\w+ing)\b',s))
